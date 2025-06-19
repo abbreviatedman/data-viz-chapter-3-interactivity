@@ -36,7 +36,8 @@ app.layout = html.Div([
         tooltip={"placement": "bottom"}
     ),
 
-    dcc.Graph(id="fe-vs-hp-graph")
+    dcc.Graph(id="fe-vs-hp-graph"),
+    html.Div(id="info-panel")
 ])
 
 @app.callback(
